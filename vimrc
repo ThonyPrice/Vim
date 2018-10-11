@@ -1,3 +1,6 @@
+set nocompatible
+set term=xterm-256color
+
 if empty(glob('~/.vim/autoload/plug.vim'))
     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -27,22 +30,22 @@ let g:lightline = { 'colorscheme': 'onehalfdark' }
 
 set guifont=Menlo\ Regular:h18
 
-set lines=35 columns=150
+" set lines=35 "columns=150
 set colorcolumn=90
 set number relativenumber
 
 set hidden
 set history=100
 filetype indent on
-set nowrap
-set tabstop=2
+" set nowrap
+" set tabstop=2
 set shiftwidth=2
 set expandtab
 set smartindent
 set autoindent
 
 set hlsearch
-nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
+"nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
 set showmatch
 
 
